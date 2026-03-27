@@ -29,7 +29,7 @@ if __name__ == "__main__":
                 continue
             print(f"Processing {upd_file}...")
             begin_time = time.time()
-            new_testcases, change, new_scenario, _ = update_testcase(f"data/{model_name}_data/{ini_file}", f"data/{model_name}_data/{ini_file.split('.')[0][:-5]}_testcase.json", f"data/{model_name}_data/{upd_file}", "../../model/trained/mengzi_rule_filtering", model, "../../data/domain_knowledge/classification_knowledge.json", "../../data/domain_knowledge/knowledge.json")
+            new_testcases, change, new_scenario, _ = update_testcase(f"data/{model_name}_data/{ini_file}", f"data/{model_name}_data/{ini_file.split('.')[0][:-5]}_testcase.json", f"data/{model_name}_data/{upd_file}", "../../model/trained/mengzi_rule_filtering", model, "../../reuse/domain_knowledge/classification_knowledge.json", "../../reuse/domain_knowledge/knowledge.json", False)
 
             json.dump(new_testcases, open(f"ours_result/{model_name}/{ini_file.split('.')[0][:-9]}_upd_testcase.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)
             json.dump(change, open(f"ours_result/{model_name}/{ini_file.split('_')[0]}_change.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)

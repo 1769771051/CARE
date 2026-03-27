@@ -12,7 +12,7 @@ def generate_testcase_for_data(model):
             continue
 
         print(f"开始处理 {file}")
-        generate_test_case("../../model/trained/mengzi_rule_filtering", model, "../../data/domain_knowledge/classification_knowledge.json", "../../data/domain_knowledge/knowledge.json", "cache/setting.json", f"data/{model_name}_data/{file}", "cache/sci.json", "cache/sco.json", "cache/fi.json", "cache/fo.json", "cache/r1.mydsl", "cache/r2.mydsl", "cache/r3.mydsl", "cache/testcase.json")
+        generate_test_case("../../model/trained/mengzi_rule_filtering", model, "../../reuse/domain_knowledge/classification_knowledge.json", "../../reuse/domain_knowledge/knowledge.json", "cache/setting.json", f"data/{model_name}_data/{file}", "cache/sci.json", "cache/sco.json", "cache/fi.json", "cache/fo.json", "cache/r1.mydsl", "cache/r2.mydsl", "cache/r3.mydsl", "cache/testcase.json")
 
         testcases = json.load(open("cache/testcase.json", "r", encoding="utf-8"))
         json.dump(testcases, open(f"data/{model_name}_data/{file.split('.')[0][:-5]}_testcase.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)

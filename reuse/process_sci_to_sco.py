@@ -5,8 +5,8 @@ import requests
 from time import sleep
 
 
-port = json.load(open("../../qwen3_service/config.json", "r", encoding="utf-8"))['port']
 def request_llm(system_prompt, user_prompt):
+    port = json.load(open("../../qwen3_service/config.json", "r", encoding="utf-8"))['port']
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}

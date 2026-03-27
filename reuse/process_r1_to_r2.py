@@ -492,7 +492,7 @@ if __name__ == "__main__":
     r1 = open("cache/r1.mydsl", "r", encoding="utf-8").read()
     sco = json.load(open("cache/sco.json", "r", encoding="utf-8"))
     setting = json.load(open("cache/setting.json", "r", encoding="utf-8"))
-    knowledge = json.load(open("../data/domain_knowledge/classification_knowledge.json", "r", encoding="utf-8"))
+    knowledge = json.load(open("../reuse/domain_knowledge/classification_knowledge.json", "r", encoding="utf-8"))
     r2 = process_r1_to_r2(r1, sco, setting, knowledge)
     with open("cache/r2.mydsl", "w", encoding="utf-8") as f:
         f.write(r2)

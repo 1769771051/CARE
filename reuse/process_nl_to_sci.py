@@ -211,7 +211,7 @@ def nl_to_sci(knowledge, nl_file=None, nl_data=None, hybrid=False):
 
 
 if __name__ == "__main__":
-    knowledge = json.load(open("../data/domain_knowledge/classification_knowledge.json", "r", encoding="utf-8"))
+    knowledge = json.load(open("../reuse/domain_knowledge/classification_knowledge.json", "r", encoding="utf-8"))
     sci, market_variety = nl_to_sci(knowledge, nl_file="cache/上海证券交易所债券交易规则.pdf")
     # input_data = open("cache/input.txt", "r", encoding="utf-8").read()
     # sci, market_variety = nl_to_sci(knowledge, nl_data = input_data)

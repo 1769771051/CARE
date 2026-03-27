@@ -412,9 +412,9 @@ def judge_conflict(value1, value2):
 
 
 if __name__ == "__main__":
-    knowledge_file = "../data/domain_knowledge/classification_knowledge.json"
-    knowledge_tree_file = "../data/domain_knowledge/classification_knowledge_tree.json"
-    after_decode_file = "../data/domain_knowledge/classification_knowledge_decode.json"
+    knowledge_file = "../reuse/domain_knowledge/classification_knowledge.json"
+    knowledge_tree_file = "../reuse/domain_knowledge/classification_knowledge_tree.json"
+    after_decode_file = "../reuse/domain_knowledge/classification_knowledge_decode.json"
 
     knowledge = json.load(open(knowledge_file, "r", encoding="utf-8"))
     knowledge_tree = encode_tree(knowledge)

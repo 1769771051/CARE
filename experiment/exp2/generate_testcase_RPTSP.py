@@ -14,7 +14,7 @@ from reuse.rule_testcase_relation_mining import get_rules
 
 sc_model = "../../model/trained/mengzi_rule_filtering"
 f_r1_model = "../../model/trained/glm4_lora_exp"
-classification_knowledge_file = "../../data/domain_knowledge/classification_knowledge.json"
+classification_knowledge_file = "../../reuse/domain_knowledge/classification_knowledge.json"
 
 def construct_relation(rules, testcases, idx):
     # rules: [{"id": "R1", "text": "需求1描述"}, ...]

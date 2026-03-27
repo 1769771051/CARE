@@ -9,7 +9,7 @@ def generate_testcase_for_data():
             continue
 
         print(f"开始处理 {file}")
-        generate_test_case("../../model/trained/mengzi_rule_filtering", "../../model/trained/glm4_lora_exp", "../../data/domain_knowledge/classification_knowledge.json", "../../data/domain_knowledge/knowledge.json", "cache/setting.json", f"data/{file}", "cache/sci.json", "cache/sco.json", "cache/fi.json", "cache/fo.json", "cache/r1.mydsl", "cache/r2.mydsl", "cache/r3.mydsl", "cache/testcase.json", skip_sc=True if any(x in file for x in ["dataset1", "dataset2", "dataset6"]) else False)
+        generate_test_case("../../model/trained/mengzi_rule_filtering", "../../model/trained/glm4_lora_exp", "../../reuse/domain_knowledge/classification_knowledge.json", "../../reuse/domain_knowledge/knowledge.json", "cache/setting.json", f"data/{file}", "cache/sci.json", "cache/sco.json", "cache/fi.json", "cache/fo.json", "cache/r1.mydsl", "cache/r2.mydsl", "cache/r3.mydsl", "cache/testcase.json", skip_sc=True if any(x in file for x in ["dataset1", "dataset2", "dataset6"]) else False)
 
         testcases = json.load(open("cache/testcase.json", "r", encoding="utf-8"))
         json.dump(testcases, open(f"data/{file.split('.')[0][:-5]}_testcase.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)

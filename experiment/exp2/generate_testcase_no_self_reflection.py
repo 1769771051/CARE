@@ -13,8 +13,8 @@ from reuse.process_r1_to_r2 import process_r1_to_r2
 from reuse.process_r2_to_r3 import process_r2_to_r3
 
 
-classification_knowledge_file = "../../data/domain_knowledge/classification_knowledge.json"
-other_knowledge_file = "../../data/domain_knowledge/knowledge.json"
+classification_knowledge_file = "../../reuse/domain_knowledge/classification_knowledge.json"
+other_knowledge_file = "../../reuse/domain_knowledge/knowledge.json"
 sc_model_path = "../../model/trained/mengzi_rule_filtering"
 tc_model_path = "../../model/trained/glm4_lora_exp"
 

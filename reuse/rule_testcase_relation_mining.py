@@ -37,7 +37,7 @@ def is_id(str):
             return False
     return True
 
-def get_rules(file, classification_knowledge_file, sc_model, skip_sc=False):
+def get_rules(file, classification_knowledge_file, sc_model, skip_sc=True):
     # 寻找文件中的可测试规则
     classification_knowledge = json.load(open(classification_knowledge_file, "r", encoding="utf-8"))
     if file.endswith(".txt"):
@@ -56,12 +56,12 @@ def get_rules(file, classification_knowledge_file, sc_model, skip_sc=False):
     fi = select_rules(sco)
     return fi, market_variety, sco
 
-def get_scenario(fi, market_variety, tc_model_path, classification_knowledge_file, other_knowledge_file, sco):
+def get_scenario(fi, market_variety, tc_model_path, classification_knowledge_file, other_knowledge_file, sco, api_key=None):
     """依据规则生成r3。第一个返回值是的r3，是字符串格式"""
     classification_knowledge = json.load(open(classification_knowledge_file, "r", encoding="utf-8"))
     other_knowledge = json.load(open(other_knowledge_file, "r", encoding="utf-8"))
 
-    fo = rule_formalization(fi, tc_model_path)
+    fo = rule_formalization(fi, tc_model_path, api_key=api_key)
     r1 = to_r(fo, fix=True)
     r2 = process_r1_to_r2(r1, sco, market_variety, classification_knowledge)
     r3, _, _ = process_r2_to_r3(r2, other_knowledge)
@@ -310,8 +310,8 @@ if __name__ == "__main__":
     parser.add_argument("--tc_model_path", type=str, default="../model/trained/glm4_lora")
     parser.add_argument("--sc_model_path", type=str, default="../model/trained/mengzi_rule_filtering")
     parser.add_argument("--output_file", type=str, default="./cache/old_rule_testcase_relation.json")
-    parser.add_argument("--classification_knowledge_file", type=str, default="../data/domain_knowledge/classification_knowledge.json")
-    parser.add_argument("--other_knowledge_file", type=str, default="../data/domain_knowledge/knowledge.json")
+    parser.add_argument("--classification_knowledge_file", type=str, default="../reuse/domain_knowledge/classification_knowledge.json")
+    parser.add_argument("--other_knowledge_file", type=str, default="../reuse/domain_knowledge/knowledge.json")
     args = parser.parse_args()
 
     main(args.sc_model_path, args.tc_model_path, args.rule_file, args.testcase_file, args.output_file, args.classification_knowledge_file, args.other_knowledge_file)

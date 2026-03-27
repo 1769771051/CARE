@@ -4,10 +4,41 @@ from peft import PeftConfig, PeftModel
 import torch
 from tqdm import tqdm
 import threading
+from openai import OpenAI
 
 max_new_tokens = 1024 * 2
 
+def request_api(system_prompt, rule, api_key):
+    """调用api抽取规则"""
+    baseURL, apiKey, model = api_key["baseURL"], api_key["apiKey"], api_key["model"]
+    client = OpenAI(api_key=apiKey)
+    response = client.chat.completions.create(
+        model=model,
+        base_url=baseURL,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": rule}
+        ],
+        max_tokens=max_new_tokens,
+        temperature=0,  # 禁用随机性
+        do_sample=False
+    )
+    return response.choices[0].message.content
+
+
 def rule_formalization(fi, model_name_or_path, setting=None, **kwargs):
+
+    api_key = kwargs.get("api_key", None)
+    if api_key["apiKey"] != "":
+        fo = fi.copy()
+        # 调用api抽取规则
+        system_prompt = open("prompt_gpt5.txt", "r", encoding="utf-8").read()
+        for item in tqdm(fo):
+            rule = item['rule']
+            predication = request_api(system_prompt, f"规则: {rule}", api_key)
+            item['predication'] = predication
+        return fo
+
     if all([model not in model_name_or_path for model in ["llama2", "llama3", "qwen2", "internlm2", "glm4", 'qwen1.5', 'chatglm3']]):
         raise ValueError("模型类型错误，必须为llama2, llama3, qwen2, internlm2, glm4, qwen1.5, chatglm3之一，输入的模型为: " + model_name_or_path)
     device_map = "cuda:0" if torch.cuda.is_available() else "auto"

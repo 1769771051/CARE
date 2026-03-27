@@ -279,7 +279,7 @@ def process_r2_to_r3(r2, knowledge):
 if __name__ == "__main__":
     with open("cache/r2.mydsl", "r", encoding="utf-8") as f:
         r2 = f.read()
-    knowledge = json.load(open("../data/domain_knowledge/knowledge.json", "r", encoding="utf-8"))
+    knowledge = json.load(open("../reuse/domain_knowledge/knowledge.json", "r", encoding="utf-8"))
     r3, relation_count, relation = process_r2_to_r3(r2, knowledge)
     with open("cache/r3.mydsl", "w", encoding="utf-8") as f:
         f.write(r3)

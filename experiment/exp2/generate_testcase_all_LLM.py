@@ -10,8 +10,8 @@ from experiment.exp2.generate_testcase_no_requirement import request_llm
 from reuse.process_fi_to_fo import rule_formalization
 from reuse.process_fo_to_r import to_r
 
-classification_knowledge_file = "../../data/domain_knowledge/classification_knowledge.json"
-knowledge_file = "../../data/domain_knowledge/knowledge.json"
+classification_knowledge_file = "../../reuse/domain_knowledge/classification_knowledge.json"
+knowledge_file = "../../reuse/domain_knowledge/knowledge.json"
 sc_model = "../../model/trained/mengzi_rule_filtering"
 tc_model = "../../model/trained/glm4_lora_exp"
 

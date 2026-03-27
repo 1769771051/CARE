@@ -9,8 +9,10 @@ from transfer.mydsl_to_rules import mydsl_to_rules, transfer_new_rule_format_to_
 from transfer.rules_to_mydsl import rules_to_mydsl
 from reuse.generate_linked_scenario import generate_linked_scenario
 
+api_key = json.load(open("../api_key.json", "r", encoding="utf-8"))
 
-def update_testcase(old_file, old_testcases, new_file, sc_model_path, tc_model_path, classification_knowledge_file, other_knowledge_file, skip_sc = False):
+
+def update_testcase(old_file, old_testcases, new_file, sc_model_path, tc_model_path, classification_knowledge_file, other_knowledge_file, skip_sc = True):
     """
     给定旧文件，新文件，以及旧文件生成的测试用例（测试用例集）
     1、首先，寻找文件中的可测试的规则，发现新旧文件的不同
@@ -21,11 +23,11 @@ def update_testcase(old_file, old_testcases, new_file, sc_model_path, tc_model_p
 
     # 获得新旧文件的规则和场景
     old_texts, old_mv, old_sco = get_rules(old_file, classification_knowledge_file, sc_model_path, skip_sc)
-    old_rules = get_scenario(old_texts, old_mv, tc_model_path, classification_knowledge_file, other_knowledge_file, old_sco)
+    old_rules = get_scenario(old_texts, old_mv, tc_model_path, classification_knowledge_file, other_knowledge_file, old_sco, api_key=api_key)
     old_rules = transfer_new_rule_format_to_old(mydsl_to_rules(old_rules))
     json.dump(old_rules, open("cache/old_scenario.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)
     new_texts, new_mv, new_sco = get_rules(new_file, classification_knowledge_file, sc_model_path, skip_sc)
-    new_rules = get_scenario(new_texts, new_mv, tc_model_path, classification_knowledge_file, other_knowledge_file, new_sco)
+    new_rules = get_scenario(new_texts, new_mv, tc_model_path, classification_knowledge_file, other_knowledge_file, new_sco, api_key=api_key)
     new_rules = transfer_new_rule_format_to_old(mydsl_to_rules(new_rules))
     json.dump(new_rules, open("cache/new_scenario.json", "w", encoding="utf-8"), ensure_ascii=False, indent=4)
 
@@ -297,8 +299,9 @@ if __name__ == "__main__":
     parser.add_argument("--new_scenario", type=str, default="./cache/new_scenario.json")
     parser.add_argument("--sc_model_path", type=str, default="../model/trained/mengzi_rule_filtering")
     parser.add_argument("--tc_model_path", type=str, default="../model/trained/glm4_lora")
-    parser.add_argument("--classification_knowledge_file", type=str, default="../data/domain_knowledge/classification_knowledge.json")
-    parser.add_argument("--other_knowledge_file", type=str, default="../data/domain_knowledge/knowledge.json")
+    parser.add_argument("--classification_knowledge_file", type=str, default="../reuse/domain_knowledge/classification_knowledge.json")
+    parser.add_argument("--other_knowledge_file", type=str, default="../reuse/domain_knowledge/knowledge.json")
+    parser.add_argument("--skip_sc", type=bool, default=True)
     args = parser.parse_args()
 
     if not os.path.exists(args.old_file):
@@ -307,9 +310,10 @@ if __name__ == "__main__":
         raise FileNotFoundError(f"文件 {args.old_testcases} 不存在")
     if not os.path.exists(args.new_file):
         raise FileNotFoundError(f"文件 {args.new_file} 不存在")
-    
+    if not os.path.exists(args.new_testcases):
+        raise FileNotFoundError(f"文件 {args.new_testcases} 不存在")
 
-    new_testcases, change, linked_scenario, old_relation = update_testcase(args.old_file, args.old_testcases, args.new_file, args.sc_model_path, args.tc_model_path, args.classification_knowledge_file, args.other_knowledge_file)
+    new_testcases, change, linked_scenario, old_relation = update_testcase(args.old_file, args.old_testcases, args.new_file, args.sc_model_path, args.tc_model_path, args.classification_knowledge_file, args.other_knowledge_file, args.skip_sc)
     json.dump(new_testcases, open(args.new_testcases, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
     json.dump(change, open(args.change, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
     json.dump(linked_scenario, open(args.new_scenario, "w", encoding="utf-8"), ensure_ascii=False, indent=4)

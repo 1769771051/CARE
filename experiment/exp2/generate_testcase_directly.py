@@ -9,8 +9,8 @@ import time
 
 # 创建文件夹
 os.makedirs("directly", exist_ok=True)
-classification_knowledge_file="../../data/domain_knowledge/classification_knowledge.json"
-knowledge_file="../../data/domain_knowledge/knowledge.json"
+classification_knowledge_file="../../reuse/domain_knowledge/classification_knowledge.json"
+knowledge_file="../../reuse/domain_knowledge/knowledge.json"
 sci_file = "cache/sci.json"
 setting_file = "cache/setting.json"
 sco_file = "cache/sco.json"

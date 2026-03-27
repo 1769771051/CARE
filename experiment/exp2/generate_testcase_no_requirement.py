@@ -15,8 +15,8 @@ import requests
 from tqdm import tqdm
 
 
-classification_knowledge_file = "../../data/domain_knowledge/classification_knowledge.json"
-knowledge_file = "../../data/domain_knowledge/knowledge.json"
+classification_knowledge_file = "../../reuse/domain_knowledge/classification_knowledge.json"
+knowledge_file = "../../reuse/domain_knowledge/knowledge.json"
 sc_model = "../../model/trained/mengzi_rule_filtering"
 tc_model = "../../model/trained/glm4_lora_exp"
 

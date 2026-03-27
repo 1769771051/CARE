@@ -107,8 +107,8 @@ if __name__ == "__main__":
     r2_file="cache/r2.mydsl"
     r3_file="cache/r3.mydsl"
     testcase_file = "cache/testcase.json"
-    knowledge_file="../data/domain_knowledge/knowledge.json"
-    classification_knowledge_file="../data/domain_knowledge/classification_knowledge.json"
+    knowledge_file="../reuse/domain_knowledge/knowledge.json"
+    classification_knowledge_file="../reuse/domain_knowledge/classification_knowledge.json"
     setting_file="cache/setting.json"
 
     sc_model="../model/trained/mengzi_rule_filtering"

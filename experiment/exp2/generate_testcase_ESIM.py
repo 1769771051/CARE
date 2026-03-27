@@ -17,7 +17,7 @@ from experiment.exp2.ESIM_dataset import embedding_and_get_dataloader
 
 sc_model = "../../model/trained/mengzi_rule_filtering"
 f_r1_model = "../../model/trained/glm4_lora_exp"
-classification_knowledge_file = "../../data/domain_knowledge/classification_knowledge.json"
+classification_knowledge_file = "../../reuse/domain_knowledge/classification_knowledge.json"
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 checkpoint = torch.load("../../model/pretrained/ESIM/best.pth.tar")
 vocab_size = checkpoint["model"]["_word_embedding.weight"].size(0)
