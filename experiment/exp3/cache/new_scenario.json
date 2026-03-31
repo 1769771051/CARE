@@ -1,0 +1,5575 @@
+{
+    "3.4.1": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "光伏发电站的历史功率、历史气象数据、历史设备运行状态等数据",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "建立",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电功率预测模型",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.4.2": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "辐照度、功率或数值天气预报数据等信息",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "作为",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "模型的输入",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.4.3": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "光伏发电系统的设备状态及运行工况",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "预测",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站未来一段时间内的有功功率",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.4.4": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            },
+            {
+                "key": "预测时段",
+                "operation": "is",
+                "value": "中期"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "分为",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "中期光伏功率预测",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.4.5": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            },
+            {
+                "key": "预测时段",
+                "operation": "is",
+                "value": "短期"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "分为",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "短期光伏功率预测",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.4.6": {
+        "rule_class": [
+            "3.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电产品"
+            },
+            {
+                "key": "预测时段",
+                "operation": "is",
+                "value": "超短期"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "分为",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "超短期光伏功率预测",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.5.1": {
+        "rule_class": [
+            "3.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "中期光伏功率预测"
+            },
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "次日零时起到未来240h"
+            }
+        ],
+        "results": [
+            {
+                "key": "交易品种",
+                "value": "光伏发电站次日零时起到未来240h的有功功率预测",
+                "operation": "is"
+            },
+            {
+                "key": "时间分辨率",
+                "value": "15min",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.6.1": {
+        "rule_class": [
+            "3.6"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "短期光伏功率预测"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "光伏发电站次日零时起到未来72h的有功功率预测",
+                "operation": "is"
+            },
+            {
+                "key": "时间分辨率",
+                "value": "15min",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.7.1": {
+        "rule_class": [
+            "3.7"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "超短期光伏功率预测"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "未来15min到4h",
+                "operation": "is"
+            },
+            {
+                "key": "交易品种",
+                "value": "光伏发电站的有功功率",
+                "operation": "is"
+            },
+            {
+                "key": "时间分辨率",
+                "value": "15min",
+                "operation": "is"
+            }
+        ]
+    },
+    "3.12.1": {
+        "rule_class": [
+            "3.12"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站动态无功电流上升时间（rise"
+            },
+            {
+                "key": "time",
+                "operation": "of",
+                "value": "dynamic"
+            },
+            {
+                "key": "reactive",
+                "operation": "current",
+                "value": "of"
+            },
+            {
+                "key": "PV",
+                "operation": "power",
+                "value": "station）"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "自并网点电压跌落或升高达到触发设定值开始"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "到光伏发电站动态无功电流增量达到增量目标值的90%所需的时间",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.1": {
+        "rule_class": [
+            "4.1"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "有功功率控制",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.1.1": {
+        "rule_class": [
+            "4.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "参与电力系统调频、调峰的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.2.1": {
+        "rule_class": [
+            "4.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有功功率控制系统",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有功功率连续平滑调节的能力",
+                "operation": "is"
+            },
+            {
+                "key": "能力",
+                "value": "参与电力系统有功功率控制",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.3.1": {
+        "rule_class": [
+            "4.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站有功功率控制系统的控制模式"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "至少包含",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有功功率限值控制、有功功率定值控制、有功功率差值控制和调频控制",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.3.2": {
+        "rule_class": [
+            "4.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "控制模式"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构下发的自动化信号及调度指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "投入",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.3.3": {
+        "rule_class": [
+            "4.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "控制模式"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构下发的自动化信号及调度指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "退出",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.3.4": {
+        "rule_class": [
+            "4.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "有功功率控制"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "符合",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "GB/T40289的相关规定",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.4.1": {
+        "rule_class": [
+            "4.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "并网、正常停机以及太阳能辐照度增长过程中",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站的有功功率变化速率",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "满足",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "电力系统安全稳定运行的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.4.2": {
+        "rule_class": [
+            "4.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "并网、正常停机以及太阳能辐照度增长过程中",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "限值",
+                "operation": "is"
+            },
+            {
+                "key": "操作主体",
+                "value": "电力系统调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "确定",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "宜为10%额定容量/min",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.1.4.3": {
+        "rule_class": [
+            "4.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "太阳能辐照度快速降低时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏发电站有功功率变化速率允许超出限值",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.2.1.1": {
+        "rule_class": [
+            "4.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统事故或紧急情况"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "紧急降低",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有功功率",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.2.1.2": {
+        "rule_class": [
+            "4.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统事故或紧急情况"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "紧急降低",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有功功率",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.2.1.3": {
+        "rule_class": [
+            "4.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统事故或紧急情况"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "暂时从电网切出",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.2.2.1": {
+        "rule_class": [
+            "4.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统恢复正常运行状态"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "并网运行",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.1.1": {
+        "rule_class": [
+            "4.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站一次调频功能"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "符合",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.1.2": {
+        "rule_class": [
+            "4.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站一次调频功能"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的指令",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "启动与停用",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.2.1": {
+        "rule_class": [
+            "4.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "电力系统频率偏差",
+                "operation": "超出",
+                "value": "一次调频死区范围"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "公式",
+                "value": "公式(1)",
+                "operation": "is"
+            },
+            {
+                "key": "ΔP",
+                "value": "-Kf×(f",
+                "operation": "="
+            },
+            {
+                "key": "-",
+                "value": "×",
+                "operation": "fN)/fN"
+            },
+            {
+                "key": "约束",
+                "value": "PN",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.3.1": {
+        "rule_class": [
+            "4.3.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易类型",
+                "operation": "is",
+                "value": "一次调频"
+            }
+        ],
+        "results": [
+            {
+                "key": "有功调频系数的取值",
+                "value": "10~50",
+                "operation": "is"
+            },
+            {
+                "key": "死区范围",
+                "value": "±(0.02Hz~0.06Hz)",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.4.1": {
+        "rule_class": [
+            "4.3.4"
+        ],
+        "constraints": [
+            {
+                "key": "电力系统频率",
+                "operation": "大于",
+                "value": "50Hz"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "有功功率减少的幅值限制",
+                "value": "10%额定有功功率",
+                "operation": "不小于"
+            }
+        ]
+    },
+    "4.3.5.1": {
+        "rule_class": [
+            "4.3.5"
+        ],
+        "constraints": [
+            {
+                "key": "电力系统频率",
+                "operation": "小于",
+                "value": "50Hz"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "有功功率增加的幅值限制",
+                "value": "6%额定有功功率",
+                "operation": "不小于"
+            }
+        ]
+    },
+    "4.3.6.1": {
+        "rule_class": [
+            "4.3.6"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "一次调频有功功率响应的滞后时间",
+                "value": "1s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "4.3.6.2": {
+        "rule_class": [
+            "4.3.6"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "一次调频有功功率响应的上升时间",
+                "value": "5s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "4.3.6.3": {
+        "rule_class": [
+            "4.3.6"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "一次调频有功功率响应的调节时间",
+                "value": "15s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "4.3.6.4": {
+        "rule_class": [
+            "4.3.6"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "一次调频达到稳定时的有功功率调节偏差",
+                "value": "额定有功功率的±1%",
+                "operation": "不超过"
+            }
+        ]
+    },
+    "4.3.7.1": {
+        "rule_class": [
+            "4.3.7"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "设置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "一次调频功能的启用状态信号、动作状态信号",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "上传至",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "调度监控系统",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.7.2": {
+        "rule_class": [
+            "4.3.7"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "设置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "启用与停用功能",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "本地",
+                "operation": "is"
+            }
+        ]
+    },
+    "4.3.7.3": {
+        "rule_class": [
+            "4.3.7"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "设置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "启用与停用功能",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "调度监控系统远程控制",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.1.1": {
+        "rule_class": [
+            "5.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站安装的光伏逆变器"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "额定有功出力下功率因数在超前0.95~滞后0.95的范围内",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "动态可调",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "应该在图1所示矩形框内",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器无功出力范围",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "标引符号说明",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "P",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "光伏逆变器有功功率标幺值",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.1.2": {
+        "rule_class": [
+            "5.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站安装的光伏逆变器"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "额定有功出力下功率因数在超前0.95~滞后0.95的范围内",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "动态可调",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "应该在图1所示矩形框内",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器无功出力范围",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "标引符号说明",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "Q",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "光伏逆变器无功功率标幺值",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.1": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "利用",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器的无功容量及调节能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.2": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "无功补偿装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.3": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "并联电容器",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.4": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "并联电抗器",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.5": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "静止无功补偿器",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.6": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "静止无功发生器",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.1.2.7": {
+        "rule_class": [
+            "5.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当光伏逆变器的无功容量不能满足电力系统电压调节需求时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "同步调相机",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.2.1.1": {
+        "rule_class": [
+            "5.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "无功容量配置",
+                "value": "电力系统分层和分区基本平衡的要求",
+                "operation": "满足"
+            },
+            {
+                "key": "无功容量配置",
+                "value": "检修备用要求",
+                "operation": "满足"
+            }
+        ]
+    },
+    "5.2.2.1": {
+        "rule_class": [
+            "5.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "接入公共电网的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "容性无功容量",
+                "value": "is",
+                "operation": "应能够补偿"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站满发时站内汇集线路、主变压器的感性无功功率及光伏发电站送出线路的一半感性无功功率之和",
+                "operation": "is"
+            },
+            {
+                "key": "感性无功容量",
+                "value": "is",
+                "operation": "应能够补偿"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站自身的容性充电无功功率及光伏发电站送出线路的一半充电无功功率之和",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.2.3.1": {
+        "rule_class": [
+            "5.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "500kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "容性无功容量",
+                "value": "站内汇集线路、主变压器的感性无功功率及光伏发电站送出线路的全部感性无功功率之和",
+                "operation": "应能够补偿"
+            }
+        ]
+    },
+    "5.2.3.2": {
+        "rule_class": [
+            "5.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "500kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "感性无功容量",
+                "value": "光伏发电站自身的容性充电无功功率及光伏发电站送出线路的全部充电无功功率之和",
+                "operation": "应能够补偿"
+            }
+        ]
+    },
+    "5.2.3.3": {
+        "rule_class": [
+            "5.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "750kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "容性无功容量",
+                "value": "站内汇集线路、主变压器的感性无功功率及光伏发电站送出线路的全部感性无功功率之和",
+                "operation": "应能够补偿"
+            }
+        ]
+    },
+    "5.2.3.4": {
+        "rule_class": [
+            "5.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "750kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "感性无功容量",
+                "value": "光伏发电站自身的容性充电无功功率及光伏发电站送出线路的全部充电无功功率之和",
+                "operation": "应能够补偿"
+            }
+        ]
+    },
+    "5.3.1.1": {
+        "rule_class": [
+            "5.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "无功功率调节及电压控制能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.3.2.1": {
+        "rule_class": [
+            "5.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "无功/电压控制系统",
+                "operation": "is"
+            },
+            {
+                "key": "系统应具备",
+                "value": "定电压控制、定功率因数控制和定无功功率控制等控制模式以及在线切换控制模式的功能",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.3.3.1": {
+        "rule_class": [
+            "5.3.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "主变压器",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "采用",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "有载调压变压器",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.3.4.1": {
+        "rule_class": [
+            "5.3.4"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站无功电压控制系统"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "自动接收",
+                "operation": "is"
+            },
+            {
+                "key": "操作主体",
+                "value": "电力系统调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "下发的并网点电压值、功率因数值或无功功率值",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "协调控制",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器和无功补偿装置的无功输出",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "控制",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "主变压器分接头位置",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "实现",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "并网点电压的控制",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "响应时间",
+                "operation": "is"
+            },
+            {
+                "key": "控制精度",
+                "value": "GB/T29321的相关规定",
+                "operation": "符合"
+            }
+        ]
+    },
+    "5.3.5.1": {
+        "rule_class": [
+            "5.3.5"
+        ],
+        "constraints": [
+            {
+                "key": "电网电压",
+                "operation": "is",
+                "value": "处于正常范围内"
+            },
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "35kV~110kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "电网电压",
+                "value": "处于正常范围内",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "接入",
+                "operation": "is"
+            },
+            {
+                "key": "电网电压",
+                "value": "标称电压的97%~107%范围内",
+                "operation": "is"
+            }
+        ]
+    },
+    "5.3.6.1": {
+        "rule_class": [
+            "5.3.6"
+        ],
+        "constraints": [
+            {
+                "key": "电网电压",
+                "operation": "处于",
+                "value": "正常范围内"
+            },
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "220kV及以上"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "通过光伏发电站接入电网"
+            }
+        ],
+        "results": [
+            {
+                "key": "电网电压",
+                "value": "标称电压的100%~110%范围内",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.1.1": {
+        "rule_class": [
+            "6.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "电力设施",
+                "operation": "is",
+                "value": "光伏发电站并网点电压"
+            },
+            {
+                "key": "电压跌至",
+                "operation": "is",
+                "value": "0"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "150ms",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.1.2": {
+        "rule_class": [
+            "6.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "电力设施",
+                "operation": "is",
+                "value": "光伏发电站并网点电压"
+            },
+            {
+                "key": "电压跌至",
+                "operation": "is",
+                "value": "标称电压的20%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "625ms",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.1.3": {
+        "rule_class": [
+            "6.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "电力设施",
+                "operation": "is",
+                "value": "光伏发电站并网点电压"
+            },
+            {
+                "key": "电压跌至",
+                "operation": "is",
+                "value": "标称电压的20%以上至90%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "在图2所示的阴影区域内不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站低电压穿越要求，横坐标为时间/s，纵坐标为并网点电压标幺值，包含电网故障引起电压跌落的电压轮廓线及光伏逆变器和无功补偿装置可从电网切出的区域标识",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.2.1": {
+        "rule_class": [
+            "6.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "故障类型",
+                "operation": "is",
+                "value": "不同类型电力系统故障"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站低电压穿越的考核电压"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "见表1",
+                "operation": "is"
+            },
+            {
+                "key": "故障类型",
+                "value": "三相短路故障",
+                "operation": "is"
+            },
+            {
+                "key": "考核电压",
+                "value": "并网点线电压",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.2.2": {
+        "rule_class": [
+            "6.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "故障类型",
+                "operation": "is",
+                "value": "不同类型电力系统故障"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站低电压穿越的考核电压"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "见表1",
+                "operation": "is"
+            },
+            {
+                "key": "故障类型",
+                "value": "两相短路故障",
+                "operation": "is"
+            },
+            {
+                "key": "考核电压",
+                "value": "并网点线电压",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.2.3": {
+        "rule_class": [
+            "6.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "故障类型",
+                "operation": "is",
+                "value": "不同类型电力系统故障"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站低电压穿越的考核电压"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "见表1",
+                "operation": "is"
+            },
+            {
+                "key": "故障类型",
+                "value": "单相接地短路故障",
+                "operation": "is"
+            },
+            {
+                "key": "考核电压",
+                "value": "并网点相电压",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.1": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "对称故障时的动态无功支撑能力",
+                "value": "具备动态无功电流支撑能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.2": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "光伏发电站并网点电压",
+                "operation": "低于",
+                "value": "标称电压的90%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "对称故障时的动态无功支撑能力",
+                "value": "光伏发电站注入的动态无功电流增量",
+                "operation": "is"
+            },
+            {
+                "key": "ΔIt",
+                "value": "电压跌落前正常运行时的无功电流输出值I0与动态无功电流增量ΔIt之和",
+                "operation": "="
+            },
+            {
+                "key": "ΔIt",
+                "value": "K1×(0.9",
+                "operation": "="
+            },
+            {
+                "key": "-",
+                "value": "Ut)×IN",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "(0≤Ut≤0.9)",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.3": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "公式",
+                "value": "公式(2)",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.4": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "K1",
+                "value": "光伏发电站动态无功电流比例系数",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.5": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "K1的取值范围",
+                "value": "宜为1.5~3",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.3.6": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "光伏发电站动态无功电流上升时间",
+                "value": "30ms",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "6.1.3.7": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "并网点电压跌落期间光伏发电站无功电流的最大输出能力",
+                "value": "光伏发电站额定电流IN的1.05倍",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "6.1.3.8": {
+        "rule_class": [
+            "6.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相对称短路故障导致光伏发电站并网点电压跌落"
+            },
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "自并网点电压恢复至标称电压90%以上的时刻起"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "30ms内",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "退出",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "动态无功电流增量",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "ΔIt",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.4.1": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相不对称短路故障"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "光伏发电站并网点电压跌落"
+            }
+        ],
+        "results": [
+            {
+                "key": "光伏发电站应具备",
+                "value": "动态正、负序无功电流支撑能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.4.2": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "光伏发电站并网点电压正序分量",
+                "operation": "is",
+                "value": "标称电压的60%~90%"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "向电网注入的正序无功电流",
+                "value": "电压跌落前正常运行时的正序无功电流输出值I0++正序动态无功电流增量ΔIt+",
+                "operation": "is"
+            },
+            {
+                "key": "从电网吸收的负序无功电流",
+                "value": "电压跌落前正常运行时的负序无功电流输出值I0--负序动态无功电流增量ΔIt-",
+                "operation": "is"
+            },
+            {
+                "key": "动态正负序无功电流增量",
+                "value": "响应并网点电压变化并满足公式(3)",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.4.3": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相不对称短路故障"
+            },
+            {
+                "key": "光伏发电站并网点电压正序分量",
+                "operation": "is",
+                "value": "标称电压的60%~90%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "K2+",
+                "value": "光伏发电站动态正序无功电流比例系数",
+                "operation": "is"
+            },
+            {
+                "key": "K2-",
+                "value": "光伏发电站动态负序无功电流比例系数",
+                "operation": "is"
+            },
+            {
+                "key": "K2+、K2-",
+                "value": "宜不小于1.0",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.4.4": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相不对称短路故障"
+            },
+            {
+                "key": "光伏发电站并网点电压正序分量",
+                "operation": "is",
+                "value": "标称电压的60%~90%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "正、负序动态无功电流上升时间",
+                "value": "30ms",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "6.1.4.5": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相不对称短路故障"
+            },
+            {
+                "key": "并网点电压跌落期间",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "无功电流的最大输出能力",
+                "value": "光伏发电站额定电流IN的1.05倍",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "6.1.4.6": {
+        "rule_class": [
+            "6.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生三相不对称短路故障"
+            },
+            {
+                "key": "光伏发电站并网点电压正序分量",
+                "operation": "小于",
+                "value": "标称电压的60%"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "宜根据光伏逆变器和无功补偿装置的实际控制能力以及光伏发电站接入的电网条件",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "在不助增并网点电压不平衡度的前提下",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电网",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "注入",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "正序动态无功电流",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "吸收",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "负序动态无功电流",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.1.5.1": {
+        "rule_class": [
+            "6.1.5"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统故障期间"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "没有切出的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "有功恢复能力",
+                "value": "对电力系统故障期间没有切出的光伏发电站的有功功率",
+                "operation": "is"
+            },
+            {
+                "key": "in",
+                "value": "is",
+                "operation": "事件"
+            },
+            {
+                "key": "约束",
+                "value": "故障清除后",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "快速恢复",
+                "operation": "is"
+            },
+            {
+                "key": "有功功率恢复的变化速率",
+                "value": "30%装机容量/s",
+                "operation": "宜不小于"
+            }
+        ]
+    },
+    "6.2.1.1": {
+        "rule_class": [
+            "6.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压升高"
+            },
+            {
+                "key": "电力系统",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "约束",
+                "operation": "is",
+                "value": "电压升高至标称电压的125%以上至130%"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器和无功补偿装置",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "500ms",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.1.2": {
+        "rule_class": [
+            "6.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压升高"
+            },
+            {
+                "key": "电力系统",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "约束",
+                "operation": "is",
+                "value": "电压升高至标称电压的120%以上至125%"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器和无功补偿装置",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "1s",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.1.3": {
+        "rule_class": [
+            "6.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "电力系统发生故障导致光伏发电站并网点电压升高"
+            },
+            {
+                "key": "电力系统",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "约束",
+                "operation": "is",
+                "value": "电压升高至标称电压的110%以上至120%"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器和其他无功补偿装置",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "10s",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.1": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "动态无功支撑能力",
+                "value": "当光伏发电站并网点电压升高时",
+                "operation": "is"
+            },
+            {
+                "key": "电压",
+                "value": "标称电压的110%~130%",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.2": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "rule",
+                "operation": "is",
+                "value": "2"
+            }
+        ],
+        "results": [
+            {
+                "key": "if",
+                "value": "is",
+                "operation": "交易品种"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.3": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "ΔIt",
+                "value": "K3×(Ut",
+                "operation": "="
+            },
+            {
+                "key": "-",
+                "value": "1.1)×IN",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "1.1≤Ut≤1.3",
+                "operation": "is"
+            },
+            {
+                "key": "ΔIt",
+                "value": "光伏发电站注入的动态无功电流增量",
+                "operation": "is"
+            },
+            {
+                "key": "单位",
+                "value": "安(A)",
+                "operation": "is"
+            },
+            {
+                "key": "K3",
+                "value": "光伏发电站动态无功电流比例系数",
+                "operation": "is"
+            },
+            {
+                "key": "Ut",
+                "value": "光伏发电站并网点电压标幺值",
+                "operation": "is"
+            },
+            {
+                "key": "IN",
+                "value": "光伏发电站额定电流",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.4": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "动态无功支撑能力",
+                "value": "当光伏发电站并网点电压升高时",
+                "operation": "is"
+            },
+            {
+                "key": "电压",
+                "value": "标称电压的110%~130%",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站动态无功电流比例系数K3",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.5": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "rule",
+                "operation": "is",
+                "value": "4"
+            }
+        ],
+        "results": [
+            {
+                "key": "if",
+                "value": "is",
+                "operation": "交易品种"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.6": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "上升时间",
+                "value": "30ms",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "6.2.2.7": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "动态无功支撑能力",
+                "value": "当光伏发电站并网点电压升高时",
+                "operation": "is"
+            },
+            {
+                "key": "电压",
+                "value": "标称电压的110%~130%",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "并网点电压升高期间光伏发电站无功电流的最大输出能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.8": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "rule",
+                "operation": "is",
+                "value": "6"
+            }
+        ],
+        "results": [
+            {
+                "key": "if",
+                "value": "is",
+                "operation": "交易品种"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电",
+                "operation": "is"
+            },
+            {
+                "key": "时间",
+                "value": "自并网点电压恢复至标称电压110%以下的时刻起",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.2.9": {
+        "rule_class": [
+            "6.2.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "上升时间",
+                "value": "30ms",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "6.2.3.1": {
+        "rule_class": [
+            "6.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "并网点电压升高期间"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "在满足动态无功电流支撑的前提下"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "有功控制能力",
+                "value": "具备有功功率控制能力",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "综合利用",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器、储能系统",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "实现",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "整站有功功率控制",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "保持",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "故障前有功功率",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.2.3.2": {
+        "rule_class": [
+            "6.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "并网点电压升高期间"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏发电站内的光伏逆变器在高电压穿越期间的有功功率控制要求及验证方法",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.1.1": {
+        "rule_class": [
+            "6.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "连续低电压穿越的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.1.2": {
+        "rule_class": [
+            "6.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "至少连续两次低电压穿越的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.1.3": {
+        "rule_class": [
+            "6.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "相邻两次低电压穿越之间的时间间隔",
+                "value": "可根据其送出线路及接入电力系统的故障重合闸动作时间确定",
+                "operation": "Δt"
+            },
+            {
+                "key": "可选取",
+                "value": "0.2s~2s",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.1.4": {
+        "rule_class": [
+            "6.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "每次低电压穿越的特性和支撑能力",
+                "value": "6.1的要求",
+                "operation": "应满足"
+            }
+        ]
+    },
+    "6.3.2.1": {
+        "rule_class": [
+            "6.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "接入特高压直流送端近区的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "连续低-高电压穿越能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.2.2": {
+        "rule_class": [
+            "6.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "接入特高压直流送端近区的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "低电压穿越后立即高电压穿越的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "6.3.2.3": {
+        "rule_class": [
+            "6.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "接入特高压直流送端近区的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "至少连续三次低-高电压穿越的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.1.1": {
+        "rule_class": [
+            "7.1"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "交易类型",
+                "value": "买入申报",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.1.1.1": {
+        "rule_class": [
+            "7.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当并网点电压在标称电压的90%~110%"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "能正常运行",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.1.2.1": {
+        "rule_class": [
+            "7.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "当并网点电压"
+            },
+            {
+                "key": "低于",
+                "operation": "标称电压的90%或超过",
+                "value": "标称电压的110%"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.2.1": {
+        "rule_class": [
+            "7.2"
+        ],
+        "constraints": [
+            {
+                "key": "电能质量适应性",
+                "operation": "is",
+                "value": "当光伏发电站并网点的闪变值满足GB/T12326、谐波值满足GB/T14549、三相电压不平衡度满足GB/T15543的规定"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "不脱网连续运行",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.1": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "f<46.5Hz时，根据光伏逆变器和无功补偿装置允许运行的最低频率而定",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.2": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "46.5Hz≤f<47Hz时，频率每次低于47Hz高于46.5Hz时，光伏发电站应具有至少运行5s的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.3": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "47Hz≤f<47.5Hz时，频率每次低于47.5Hz高于47Hz时，光伏发电站应具有至少运行20s的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.4": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "47.5Hz≤f<48Hz时，频率每次低于48Hz高于47.5Hz时，光伏发电站应具有至少运行60s的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.5": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "48Hz≤f<48.5Hz时，频率每次低于48.5Hz高于48Hz时，光伏发电站应具有至少运行5min的能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.6": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "48.5Hz≤f≤50.5Hz时，连续运行",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.7": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "50.5Hz<f≤51Hz时，频率每次高于50.5Hz、低于51Hz时，光伏发电站应具有至少运行3min的能力，并执行电力系统调度机构下达的降低功率或高周切机策略，不允许停运状态的光伏发电站并网",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.8": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "51Hz<f≤51.5Hz时，频率每次高于51Hz、低于51.5Hz时，光伏发电站应具有至少运行30s的能力，并执行电力系统调度机构下达的降低功率或高周切机策略，不允许停运状态的光伏发电站并网",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.1.9": {
+        "rule_class": [
+            "7.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "频率适应性",
+                "value": "满足表2的要求",
+                "operation": "is"
+            },
+            {
+                "key": "表2",
+                "value": "is",
+                "operation": "不同电力系统频率范围内的光伏发电站运行要求"
+            },
+            {
+                "key": "约束",
+                "value": "f>51.5Hz时，根据光伏发电站内光伏逆变器和无功补偿装置允许运行的最高频率而定",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.3.2.1": {
+        "rule_class": [
+            "7.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "0.5s的滑窗时间内",
+                "operation": "is"
+            },
+            {
+                "key": "频率变化率的绝对值",
+                "value": "2Hz/s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "7.3.2.2": {
+        "rule_class": [
+            "7.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "1s的滑窗时间内",
+                "operation": "is"
+            },
+            {
+                "key": "频率变化率的绝对值",
+                "value": "1.5Hz/s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "7.3.2.3": {
+        "rule_class": [
+            "7.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "2s的滑窗时间内",
+                "operation": "is"
+            },
+            {
+                "key": "频率变化率的绝对值",
+                "value": "1.25Hz/s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "7.4.1.1": {
+        "rule_class": [
+            "7.4.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站内的光伏逆变器和无功补偿装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "低短路比条件下",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "连续稳定运行",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.4.2.1": {
+        "rule_class": [
+            "7.4.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "接入弱交流、极弱交流系统的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "加强",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "同步支撑能力",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.4.2.2": {
+        "rule_class": [
+            "7.4.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "接入弱交流、极弱交流系统的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "实现",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "配置同步调相机、具备同步支撑能力的光伏逆变器或储能装置等电力电子装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.4.2.3": {
+        "rule_class": [
+            "7.4.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "接入弱交流、极弱交流系统的光伏发电站"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "评估以及同步支撑加强措施"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "通过",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "专题研究",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "确定",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.4.3.1": {
+        "rule_class": [
+            "7.4.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "接入弱交流、极弱交流系统的光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "系统故障清除后由低电压穿越状态恢复至正常运行状态时"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "快速控制",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "动态电流",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "降低",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "并网点过电压水平",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "宜开展",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "过电压分析及抑制措施专题研究",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.5.1": {
+        "rule_class": [
+            "7.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "弱交流系统"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "近区存在串联补偿装置、直流换流站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "开展",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "次同步振荡风险分析及防控措施专题研究",
+                "operation": "is"
+            },
+            {
+                "key": "方法",
+                "value": "阻抗特性分析与时域仿真相结合的方法",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "评估",
+                "operation": "is"
+            }
+        ]
+    },
+    "7.5.2": {
+        "rule_class": [
+            "7.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "极弱交流系统"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "近区存在串联补偿装置、直流换流站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "开展",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "次同步振荡风险分析及防控措施专题研究",
+                "operation": "is"
+            },
+            {
+                "key": "方法",
+                "value": "阻抗特性分析与时域仿真相结合的方法",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "评估",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.1": {
+        "rule_class": [
+            "8.1"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "预测功能和预测结果上报",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.1.1": {
+        "rule_class": [
+            "8.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏功率预测系统",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.2.1": {
+        "rule_class": [
+            "8.1.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "约束",
+                "value": "光伏功率预测系统应至少具备中期、短期以及超短期光伏功率预测功能",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.2.2": {
+        "rule_class": [
+            "8.1.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "约束",
+                "value": "预测时间分辨率应不低于15min",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.2.3": {
+        "rule_class": [
+            "8.1.2"
+        ],
+        "constraints": [],
+        "results": [
+            {
+                "key": "约束",
+                "value": "光伏功率预测系统应支持在光伏发电站功率受限、光伏发电系统故障或检修等非正常停机情况下的功率预测",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.3.1": {
+        "rule_class": [
+            "8.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "按要求时间",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "上报",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "两次中期、短期光伏功率预测结果",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.3.2": {
+        "rule_class": [
+            "8.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "每日",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "上报",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "一次超短期功率预测结果",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.4.1": {
+        "rule_class": [
+            "8.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作对象",
+                "value": "电力调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "上报",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏功率预测结果",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "与预测结果相同时段的光伏发电站预计开机容量数据",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.5.1": {
+        "rule_class": [
+            "8.1.5"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "每15min",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "自动上报",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "当前时刻的开机总容量",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.1.5.2": {
+        "rule_class": [
+            "8.1.5"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "每5min",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "自动上报",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站实测气象数据",
+                "operation": "is"
+            }
+        ]
+    },
+    "8.2.1.1": {
+        "rule_class": [
+            "8.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "中期光伏功率预测结果"
+            },
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "第10日(第217h~240h)"
+            }
+        ],
+        "results": [
+            {
+                "key": "月平均准确率",
+                "value": "75%",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "8.2.2.1": {
+        "rule_class": [
+            "8.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "短期光伏功率预测结果",
+                "operation": "is",
+                "value": "日前"
+            },
+            {
+                "key": "预测月平均准确率",
+                "operation": "不低于",
+                "value": "85%"
+            }
+        ],
+        "results": [
+            {
+                "key": "预测月平均准确率",
+                "value": "85%",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "8.2.2.2": {
+        "rule_class": [
+            "8.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "短期光伏功率预测结果",
+                "operation": "is",
+                "value": "日前"
+            },
+            {
+                "key": "预测月平均合格率",
+                "operation": "不低于",
+                "value": "85%"
+            }
+        ],
+        "results": [
+            {
+                "key": "日前预测月平均合格率",
+                "value": "85%",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "8.2.3.1": {
+        "rule_class": [
+            "8.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "超短期光伏功率预测结果"
+            }
+        ],
+        "results": [
+            {
+                "key": "第4h预测月平均准确率",
+                "value": "90%",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "8.2.3.2": {
+        "rule_class": [
+            "8.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "超短期光伏功率预测结果"
+            }
+        ],
+        "results": [
+            {
+                "key": "第4h预测月平均合格率",
+                "value": "90%",
+                "operation": "不低于"
+            }
+        ]
+    },
+    "8.2.4.1": {
+        "rule_class": [
+            "8.2.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站出力受限时刻"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "预测"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "准确度计算"
+            }
+        ],
+        "results": [
+            {
+                "key": "交易品种",
+                "value": "光伏发电站出力受限时刻",
+                "operation": "is"
+            },
+            {
+                "key": "替换",
+                "value": "可用功率",
+                "operation": "is"
+            }
+        ]
+    },
+    "9.1.1": {
+        "rule_class": [
+            "9.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            }
+        ],
+        "results": [
+            {
+                "key": "电压偏差",
+                "value": "光伏发电站接入后，引起公共连接点的电压偏差",
+                "operation": "is"
+            },
+            {
+                "key": "满足",
+                "value": "的要求",
+                "operation": "GB/T12325"
+            }
+        ]
+    },
+    "9.2.1": {
+        "rule_class": [
+            "9.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "引起公共连接点的电压波动和闪变"
+            }
+        ],
+        "results": [
+            {
+                "key": "引用标准",
+                "value": "GB/T12326的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "9.3.1.1": {
+        "rule_class": [
+            "9.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站向所接入公共连接点"
+            }
+        ],
+        "results": [
+            {
+                "key": "注入的谐波电流",
+                "value": "GB/T14549",
+                "operation": "满足"
+            },
+            {
+                "key": "约束",
+                "value": "的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "9.3.2.1": {
+        "rule_class": [
+            "9.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "公共连接点的间谐波"
+            }
+        ],
+        "results": [
+            {
+                "key": "遵循的标准",
+                "value": "GB/T24337的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "9.4.1": {
+        "rule_class": [
+            "9.4"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            }
+        ],
+        "results": [
+            {
+                "key": "电压不平衡度",
+                "value": "光伏发电站接入后，引起公共连接点的电压不平衡度",
+                "operation": "is"
+            },
+            {
+                "key": "应满足",
+                "value": "的要求",
+                "operation": "GB/T15543"
+            }
+        ]
+    },
+    "9.5.1": {
+        "rule_class": [
+            "9.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "电能质量实时监测设备",
+                "operation": "is"
+            },
+            {
+                "key": "引用标准",
+                "value": "GB/T19862",
+                "operation": "is"
+            }
+        ]
+    },
+    "9.5.2": {
+        "rule_class": [
+            "9.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "光伏发电站电能质量指标",
+                "operation": "不满足",
+                "value": "要求"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "安装",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "电能质量治理设备",
+                "operation": "is"
+            }
+        ]
+    },
+    "10.1.1.1": {
+        "rule_class": [
+            "10.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "建立",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器、无功补偿装置、汇集系统及场站控制系统的机电暂态和电磁暂态仿真计算模型和参数",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "模型验证",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "准确性评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "10.1.2.1": {
+        "rule_class": [
+            "10.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "建立",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "短路电流计算模型和参数",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "模型验证",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "准确性评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "10.2.1": {
+        "rule_class": [
+            "10.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统调度机构的要求",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "开展",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "性能和参数优化工作",
+                "operation": "is"
+            }
+        ]
+    },
+    "10.2.2": {
+        "rule_class": [
+            "10.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "完成设备改造、软件升级、控制逻辑修改、控制参数或保护定值修改后"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "跟踪",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "其各个元件模型和参数的变化情况",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "重新进行",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "模型验证和准确性评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "10.2.3": {
+        "rule_class": [
+            "10.2"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "完成设备改造、软件升级、控制逻辑修改、控制参数或保护定值修改后"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "跟踪",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "其各个元件模型和参数的变化情况",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "补充",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "模型验证和准确性评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.1.1": {
+        "rule_class": [
+            "11.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站继电保护及安全自动装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "GB/T14285、GB/T32900、GB/T33982",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.1.2": {
+        "rule_class": [
+            "11.1.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "继电保护"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "适应",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站及电力系统安全稳定运行需要",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "满足",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "可靠性、选择性、灵敏性和速动性的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.2.1": {
+        "rule_class": [
+            "11.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站集电系统故障"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "快速切除",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.2.2": {
+        "rule_class": [
+            "11.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "汇集线路保护快速段定值"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "线路末端故障",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "有灵敏度",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.2.3": {
+        "rule_class": [
+            "11.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "专线接入公用电网的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "宜配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光纤电流差动保护",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.2.4": {
+        "rule_class": [
+            "11.1.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "汇集系统母线"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "母线差动保护",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.3.1": {
+        "rule_class": [
+            "11.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "独立的防孤岛保护装置",
+                "operation": "is"
+            },
+            {
+                "key": "动作时间",
+                "value": "2s",
+                "operation": "不大于"
+            }
+        ]
+    },
+    "11.1.3.2": {
+        "rule_class": [
+            "11.1.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "防孤岛保护"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "与",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "电网侧线路保护和安全自动装置",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "配合",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.4.1": {
+        "rule_class": [
+            "11.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站升压站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "故障录波设备",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.4.2": {
+        "rule_class": [
+            "11.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站升压站"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "设备接入的模拟量及开关量"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "满足",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "调度机构的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.4.3": {
+        "rule_class": [
+            "11.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站升压站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具有",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "记录通道",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "记录",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "故障前10s到故障后60s的数据",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.4.4": {
+        "rule_class": [
+            "11.1.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站升压站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "继电保护及安全自动装置在线监视与分析功能",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "汇集",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站保护及故障录波信息",
+                "operation": "is"
+            },
+            {
+                "key": "并联操作",
+                "value": "通过",
+                "operation": "is"
+            },
+            {
+                "key": "并联部分",
+                "value": "电力调度数据网与电力系统调度机构通信",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.5.1": {
+        "rule_class": [
+            "11.1.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站的二次设备及系统"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "符合",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "GB/T50866的相关规定",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.6.1": {
+        "rule_class": [
+            "11.1.6"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站二次设备"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "不间断电源装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.6.2": {
+        "rule_class": [
+            "11.1.6"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站二次设备"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "站内直流电源系统",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.1.6.3": {
+        "rule_class": [
+            "11.1.6"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站二次设备"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "外部交流供电电源消失后"
+            },
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "不间断电源装置"
+            }
+        ],
+        "results": [
+            {
+                "key": "带负荷运行时间",
+                "value": "2h",
+                "operation": "大于"
+            }
+        ]
+    },
+    "11.1.7.1": {
+        "rule_class": [
+            "11.1.7"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "接入方案的安全稳定计算结果",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "按需配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "安全自动装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.1.1": {
+        "rule_class": [
+            "11.2.1"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "计算机监控系统、有功功率控制系统、无功电压控制系统、电能量采集系统、二次系统安全防护设备、调度数据网络接入设备等",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.2.1": {
+        "rule_class": [
+            "11.2.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站调度自动化系统"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "满足",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "电力系统调度自动化能量管理系统(EMS)远动信息接入规定的要求",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.3.1": {
+        "rule_class": [
+            "11.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "关联操作主体",
+                "operation": "is",
+                "value": "电力系统调度机构"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "提供",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "遥测信号、遥信信号、遥调信号和其他安全自动装置的信号",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "信号的方式和实时性要求等",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.3.2": {
+        "rule_class": [
+            "11.2.3"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "关联操作主体",
+                "operation": "is",
+                "value": "电力系统调度机构"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "提供",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "信号的方式和实时性要求等",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.4.1": {
+        "rule_class": [
+            "11.2.4"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电"
+            }
+        ],
+        "results": [
+            {
+                "key": "关口计量点",
+                "value": "光伏发电站与电网、不同光伏发电站企业的产权分界处",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "计量装置配置",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "DL/T448的规定",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.5.1": {
+        "rule_class": [
+            "11.2.5"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "220kV及以上"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "同步相量测量装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.5.2": {
+        "rule_class": [
+            "11.2.5"
+        ],
+        "constraints": [
+            {
+                "key": "电压等级",
+                "operation": "is",
+                "value": "110(66)kV"
+            },
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "可根据实际需求配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "同步相量测量装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.6.1": {
+        "rule_class": [
+            "11.2.6"
+        ],
+        "constraints": [
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "经评估存在振荡风险"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "宽频测量装置",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.7.1": {
+        "rule_class": [
+            "11.2.7"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "配置",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "全站统一的时钟同步系统",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "站内各二次系统和设备的时钟",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "统一授时",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.2.8.1": {
+        "rule_class": [
+            "11.2.8"
+        ],
+        "constraints": [
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "光伏发电站网络安全防护"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "满足",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "防护方案",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "通过",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "网络安全等级测评和安全评估",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.3.1.1": {
+        "rule_class": [
+            "11.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "220kV及以上电压等级并网的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "两条独立的光缆通信通道",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.3.1.2": {
+        "rule_class": [
+            "11.3.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "110(66)kV电压等级并网的光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "至少具备",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "一条独立的光缆通信通道",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.3.2.1": {
+        "rule_class": [
+            "11.3.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站与电力系统直接连接的通信设备"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "具有",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "与系统接入端设备一致的接口与协议",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光纤传输设备、脉码调制终端设备、综合接入设备、调度程控交换机、数据通信网、通信监测等",
+                "operation": "is"
+            }
+        ]
+    },
+    "11.3.3.1": {
+        "rule_class": [
+            "11.3.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站内的通信设备"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "按",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "相关的设计规程",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.1.1": {
+        "rule_class": [
+            "12.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "接入"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "电力系统"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "接入电力系统前",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "完成",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "测试和评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.1.2": {
+        "rule_class": [
+            "12.1"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "改(扩)建"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "重新进行",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "测试与评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.2.1": {
+        "rule_class": [
+            "12.2"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "时间",
+                "operation": "is",
+                "value": "接入电力系统测试前30日"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作",
+                "value": "完成",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏逆变器、无功补偿装置以及光伏发电站的模型验证和准确性评价",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "测试方案",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力系统调度机构",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "备案",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.3.1": {
+        "rule_class": [
+            "12.3"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            }
+        ],
+        "results": [
+            {
+                "key": "时间",
+                "value": "全部发电单元并网调试运行后6个月内",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "提交",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "光伏发电站运行特性测试和评价报告至",
+                "operation": "is"
+            },
+            {
+                "key": "操作对象",
+                "value": "电力系统调度机构",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.4.1": {
+        "rule_class": [
+            "12.4"
+        ],
+        "constraints": [
+            {
+                "key": "操作主体",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "事件",
+                "operation": "is",
+                "value": "测试和评价"
+            }
+        ],
+        "results": [
+            {
+                "key": "操作部分",
+                "value": "a)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站电能质量测试",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "b)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站有功功率控制和频率响应能力测试",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "c)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站无功/电压控制能力测试和评价",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "d)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站无功补偿装置并网性能测试",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "e)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站电气仿真模型及参数验证和评价",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "f)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站故障穿越能力评价",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "g)",
+                "operation": "is"
+            },
+            {
+                "key": "约束",
+                "value": "光伏发电站运行适应性评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.5.1": {
+        "rule_class": [
+            "12.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "完成"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "设备改造、软件升级、控制逻辑修改、控制参数或保护定值修改"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统要求",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "重新进行",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "测试与评价",
+                "operation": "is"
+            }
+        ]
+    },
+    "12.5.2": {
+        "rule_class": [
+            "12.5"
+        ],
+        "constraints": [
+            {
+                "key": "交易品种",
+                "operation": "is",
+                "value": "光伏发电站"
+            },
+            {
+                "key": "操作",
+                "operation": "is",
+                "value": "完成"
+            },
+            {
+                "key": "操作部分",
+                "operation": "is",
+                "value": "设备改造、软件升级、控制逻辑修改、控制参数或保护定值修改"
+            }
+        ],
+        "results": [
+            {
+                "key": "约束",
+                "value": "电力系统要求",
+                "operation": "is"
+            },
+            {
+                "key": "操作",
+                "value": "补充测试",
+                "operation": "is"
+            },
+            {
+                "key": "操作部分",
+                "value": "评价",
+                "operation": "is"
+            }
+        ]
+    }
+}
